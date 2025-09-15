@@ -11,13 +11,13 @@ export default function Home() {
 					<SearchBar />
 				</div>
 				<div className="px-6">
-					<div className="p-3 pb-2 space-y-3 bg-white/50 border border-[#EBEDED] backdrop-blur-[25px] rounded-[22px] showdow-[0px_7px_29px_0px rgba(100,100,111,0.2)]">
+					<div className="p-3 pb-2 space-y-3 bg-white/60 border border-[#EBEDED] backdrop-blur-[25px] rounded-[22px] showdow-[0px_7px_29px_0px rgba(100,100,111,0.2)]">
 						<p className="text-[10px] ml-1.5 uppercase font-semibold tracking-wider">
 							Most popular categories
 						</p>
 						<ul className="grid grid-cols-3 gap-2">
 							<li>
-								<div className="flex flex-col items-center justify-between p-3 aspect-square bg-white/60 border border-[#EBEDED] backdrop-blur-[25px] shadow-[0px_12px_30px_0px rgba(106, 106, 106, 0.06)] rounded-[16px]">
+								<div className="flex flex-col items-center justify-between p-3 aspect-square shadow-[0px_12px_30px_0px rgba(106, 106, 106, 0.06)] rounded-[16px]">
 									<Image
 										src="/category/taxi.png"
 										alt="Taxi"
@@ -29,7 +29,7 @@ export default function Home() {
 								</div>
 							</li>
 							<li>
-								<div className="flex flex-col items-center justify-between p-3 aspect-square bg-white/60 border border-[#EBEDED] backdrop-blur-[25px] shadow-[0px_12px_30px_0px rgba(106, 106, 106, 0.06)] rounded-[16px]">
+								<div className="flex flex-col items-center justify-between p-3 aspect-square shadow-[0px_12px_30px_0px rgba(106, 106, 106, 0.06)] rounded-[16px]">
 									<Image
 										src="/category/truck.png"
 										alt="Taxi"
@@ -41,7 +41,7 @@ export default function Home() {
 								</div>
 							</li>
 							<li>
-								<div className="flex flex-col items-center justify-between p-3 aspect-square bg-white/60 border border-[#EBEDED] backdrop-blur-[25px] shadow-[0px_12px_30px_0px rgba(106, 106, 106, 0.06)] rounded-[16px]">
+								<div className="flex flex-col items-center justify-between p-3 aspect-square shadow-[0px_12px_30px_0px rgba(106, 106, 106, 0.06)] rounded-[16px]">
 									<Image
 										src="/category/lawn_mower.png"
 										alt="Taxi"
@@ -53,7 +53,7 @@ export default function Home() {
 								</div>
 							</li>
 							{/* <li>
-							<div className="flex flex-col items-center justify-between p-3 aspect-square bg-white/60 border border-[#EBEDED] backdrop-blur-[25px] shadow-[0px_12px_30px_0px rgba(106, 106, 106, 0.06)] rounded-[16px]">
+							<div className="flex flex-col items-center justify-between p-3 aspect-square shadow-[0px_12px_30px_0px rgba(106, 106, 106, 0.06)] rounded-[16px]">
 								<Image
 									src="/category/electrician.png"
 									alt="Taxi"
