@@ -1,103 +1,90 @@
+import { Icon } from "@iconify/react";
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
-  return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+	return (
+		<div className="font-sans grid grid-rows-[20px_1fr_20px]  min-h-screen p-6 pb-20 gap-16 sm:p-20">
+			<main className="flex flex-col">
+				<div className="p-3 pb-2 space-y-3 bg-white/70 border border-[#EBEDED] backdrop-blur-[25px] rounded-[22px] showdow-[rgba(100_100_111_0.2) 0px_7px_29px_0px]">
+					<p className="text-[10px] ml-1.5 uppercase font-semibold tracking-wider">
+						Most popular categories
+					</p>
+					<ul className="grid grid-cols-3 gap-2">
+						<li>
+							<div className="flex flex-col items-center justify-between p-3 aspect-square bg-white/60 border border-[#EBEDED] backdrop-blur-[25px] shadow-[0px_12px_30px_0px rgba(106, 106, 106, 0.06)] rounded-[16px]">
+								<Image
+									src="/category/taxi.png"
+									alt="Taxi"
+									height={48}
+									width={48}
+									className="shrink-0"
+								/>
+								<p className="text-xs line-clamp-1">Taxi</p>
+							</div>
+						</li>
+						<li>
+							<div className="flex flex-col items-center justify-between p-3 aspect-square bg-white/60 border border-[#EBEDED] backdrop-blur-[25px] shadow-[0px_12px_30px_0px rgba(106, 106, 106, 0.06)] rounded-[16px]">
+								<Image
+									src="/category/truck.png"
+									alt="Taxi"
+									height={48}
+									width={48}
+									className="shrink-0"
+								/>
+								<p className="text-xs line-clamp-1">Transport</p>
+							</div>
+						</li>
+						<li>
+							<div className="flex flex-col items-center justify-between p-3 aspect-square bg-white/60 border border-[#EBEDED] backdrop-blur-[25px] shadow-[0px_12px_30px_0px rgba(106, 106, 106, 0.06)] rounded-[16px]">
+								<Image
+									src="/category/lawn_mower.png"
+									alt="Taxi"
+									height={48}
+									width={48}
+									className="shrink-0"
+								/>
+								<p className="text-xs line-clamp-1">Lawn Mowing</p>
+							</div>
+						</li>
+						{/* <li>
+							<div className="flex flex-col items-center justify-between p-3 aspect-square bg-white/60 border border-[#EBEDED] backdrop-blur-[25px] shadow-[0px_12px_30px_0px rgba(106, 106, 106, 0.06)] rounded-[16px]">
+								<Image
+									src="/category/electrician.png"
+									alt="Taxi"
+									height={48}
+									width={48}
+									className="shrink-0"
+								/>
+								<p className="text-xs line-clamp-1">Electrician</p>
+							</div>
+						</li> */}
+					</ul>
+					<div className="flex items-center justify-between">
+						<Button
+							aria-label="Previous slide"
+							className="rounded-full"
+							size="icon"
+							variant="ghost"
+						>
+							<Icon icon="fluent:chevron-left-24-filled" className="h-4 w-4" />
+						</Button>
+						<div className="py-1 px-1.5 border border-[#EBEDED] bg-white/80 backdrop-blur-2xl rounded-full flex items-center gap-1">
+							<div className="h-1.5 w-1.5 bg-black/90 rounded-full" />
+							<div className="h-1.5 w-1.5 bg-black/30 rounded-full" />
+							<div className="h-1.5 w-1.5 bg-black/30 rounded-full" />
+						</div>
+						<Button
+							aria-label="Next slide"
+							className="rounded-full"
+							size="icon"
+							variant="ghost"
+						>
+							<Icon icon="fluent:chevron-right-24-filled" className="h-4 w-4" />
+						</Button>
+					</div>
+				</div>
+			</main>
+		</div>
+	);
 }
