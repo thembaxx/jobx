@@ -17,7 +17,7 @@ export default function Home() {
 						</p>
 						<ul className="grid grid-cols-3 gap-2">
 							<li>
-								<div className="flex flex-col items-center justify-between p-3 aspect-square shadow-[0px_12px_30px_0px rgba(106, 106, 106, 0.06)] rounded-[16px]">
+								<div className="flex flex-col items-center justify-between p-3 space-y-2 aspect-square shadow-[0px_12px_30px_0px rgba(106, 106, 106, 0.06)] rounded-[16px]">
 									<Image
 										src="/category/taxi.png"
 										alt="Taxi"
@@ -25,11 +25,11 @@ export default function Home() {
 										width={48}
 										className="shrink-0"
 									/>
-									<p className="text-xs line-clamp-1">Taxi</p>
+									<p className="text-xs text-center">Taxi</p>
 								</div>
 							</li>
 							<li>
-								<div className="flex flex-col items-center justify-between p-3 aspect-square shadow-[0px_12px_30px_0px rgba(106, 106, 106, 0.06)] rounded-[16px]">
+								<div className="flex flex-col items-center justify-between p-3 space-y-2 aspect-square shadow-[0px_12px_30px_0px rgba(106, 106, 106, 0.06)] rounded-[16px]">
 									<Image
 										src="/category/truck.png"
 										alt="Taxi"
@@ -37,11 +37,11 @@ export default function Home() {
 										width={48}
 										className="shrink-0"
 									/>
-									<p className="text-xs line-clamp-1">Transport</p>
+									<p className="text-xs text-center">Transport</p>
 								</div>
 							</li>
 							<li>
-								<div className="flex flex-col items-center justify-between p-3 aspect-square shadow-[0px_12px_30px_0px rgba(106, 106, 106, 0.06)] rounded-[16px]">
+								<div className="flex flex-col items-center justify-between p-3 space-y-2 aspect-square shadow-[0px_12px_30px_0px rgba(106, 106, 106, 0.06)] rounded-[16px]">
 									<Image
 										src="/category/lawn_mower.png"
 										alt="Taxi"
@@ -49,7 +49,7 @@ export default function Home() {
 										width={48}
 										className="shrink-0"
 									/>
-									<p className="text-xs line-clamp-1">Lawn Mowing</p>
+									<p className="text-xs">Lawn Mowing</p>
 								</div>
 							</li>
 							{/* <li>
@@ -68,7 +68,7 @@ export default function Home() {
 						<div className="flex items-center justify-between">
 							<Button
 								aria-label="Previous slide"
-								className="rounded-full"
+								className="rounded-full !text-[#6b6b6b]"
 								size="icon"
 								variant="ghost"
 							>
@@ -84,7 +84,7 @@ export default function Home() {
 							</div>
 							<Button
 								aria-label="Next slide"
-								className="rounded-full"
+								className="rounded-full text-[#6b6b6b]"
 								size="icon"
 								variant="ghost"
 							>
