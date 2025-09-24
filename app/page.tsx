@@ -1,12 +1,13 @@
 import { Icon } from "@iconify/react";
 import Image from "next/image";
+import FeaturedWork from "@/components/shared/featured-work";
 import SearchBar from "@/components/shared/search-bar";
 import { Button } from "@/components/ui/button";
 
 export default function Home() {
 	return (
 		<div className="font-sans grid grid-rows-[20px_1fr_20px]  min-h-screen py-6 pb-20 gap-16 sm:p-20">
-			<main className="flex flex-col space-y-6">
+			<main className="flex flex-col space-y-6 pb-12">
 				<div className="px-6">
 					<SearchBar />
 				</div>
@@ -45,7 +46,7 @@ export default function Home() {
 					</div>
 				</div>
 				<div className="px-6">
-					<div className="p-3 pb-2 space-y-3 bg-white/60 border border-[#EBEDED] backdrop-blur-[25px] rounded-[22px] showdow-[0px_7px_29px_0px rgba(100,100,111,0.2)]">
+					<div className="p-3 pb-2 space-y-3 bg-white/60 border border-[#EBEDED] backdrop-blur-[25px] rounded-[22px] showdow-[rgba(99, 99, 99, 0.2) 0px_2px_8px_0px)]">
 						<p className="text-[10px] ml-1.5 uppercase font-semibold tracking-wider">
 							Most popular categories
 						</p>
@@ -129,6 +130,9 @@ export default function Home() {
 							</Button>
 						</div>
 					</div>
+				</div>
+				<div className="w-full">
+					<FeaturedWork />
 				</div>
 			</main>
 		</div>
