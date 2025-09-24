@@ -11,11 +11,11 @@ import {
 const WorkItem = () => (
 	<div className="p-3 bg-white/60 h-full border border-[#EBEDED] backdrop-blur-[25px]  rounded-[22px] showdow-[rgba(99, 99, 99, 0.2) 0px_2px_8px_0px)]">
 		<div className="w-full aspect-video bg-gray-200 rounded-[16px]"></div>
-		<div className="space-y-1">
-			<h2 className="mt-3 font-medium text-xl">
+		<div className="space-y-2">
+			<h2 className="mt-3 font-medium text-lg">
 				Window frame & windows Repair/Installation
 			</h2>
-			<p className="text-[#6c6c6c] text-sm">
+			<p className="text-[#6c6c6c] text-[13px]">
 				From <span className="font-semibold text-[#3c3c3c]">25.99</span> ZAR per
 				hour
 			</p>
